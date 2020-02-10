@@ -4,7 +4,7 @@ Create a menu item for the search engine
 function createMenuItem(engines) {
   browser.menus.create({
     id: "dwds",
-    title: "im DWDS suchen",
+    title: "im DWDS nachschlagen",
     contexts: ["selection"]
   });
 }

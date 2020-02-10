@@ -1,8 +1,8 @@
 {
 
   "manifest_version": 2,
-  "name": "Verknüpfungen zum DWDS",
-  "description": "Fügt Verknüpfungen zum Wörterbuchportal „Digitales Wörterbuch der deutschen Sprache“ (dwds.de) zur Browserumgebung hinzu.",
+  "name": "Im DWDS nachschlagen",
+  "description": "Verknüpft das Wörterbuchportal „Digitales Wörterbuch der deutschen Sprache“ (dwds.de) mit der Browserumgebung.",
   "version": "0.1",
 
   "browser_specific_settings": {
