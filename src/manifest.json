@@ -4,6 +4,7 @@
   "name": "Verknüpfungen zum DWDS",
   "description": "Fügt Verknüpfungen zum Wörterbuchportal „Digitales Wörterbuch der deutschen Sprache“ (dwds.de) zur Browserumgebung hinzu.",
   "version": "0.1",
+
   "browser_specific_settings": {
     "gecko": {
       "strict_min_version": "63.0"
@@ -13,7 +14,10 @@
   "icons": {
     "16": "icons/favicon-16.png",
     "32": "icons/favicon-32.png",
-    "48": "icons/favicon-48.png"
+    "48": "icons/favicon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
   },
 
   "background": {
@@ -30,7 +34,7 @@
       "name": "DWDS",
       "search_url": "https://www.dwds.de/wb/{searchTerms}",
       "keyword": "dwds",
-      "favicon_url": "https://www.dwds.de/favicon-16x16.png",
+      "favicon_url": "https://www.dwds.de/favicon-32x32.png",
       "is_default": false,
       "encoding": "UTF-8"
     }
