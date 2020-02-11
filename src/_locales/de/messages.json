@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "Im DWDS nachschlagen",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Verknüpft das Wörterbuchportal „Digitales Wörterbuch der deutschen Sprache“ mit der Browserumgebung.",
+    "description": "Description of the extension."
+  },
+
+  "menuContent": {
+    "message": "Im DWDS nachschlagen",
+    "description": "Displays option in right-click menu."
+  }
+
+}

@@ -1,15 +1,20 @@
+// display text according to current locale
+var menutext = browser.i18n.getMessage("menuContent");
+
+
 /*
 Create a menu item for the search engine
 */
 function createMenuItem(engines) {
   browser.menus.create({
     id: "dwds",
-    title: "Im DWDS nachschlagen",
+    title: menutext,
     contexts: ["selection"]
   });
 }
 
 browser.search.get().then(createMenuItem);
+
 
 /*
 Search using the search engine whose name matches the

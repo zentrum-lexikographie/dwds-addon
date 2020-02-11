@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "Search with DWDS",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Adds shortcuts to the online German dictionary DWDS.",
+    "description": "Description of the extension."
+  },
+
+  "menuContent": {
+    "message": "Search with DWDS",
+    "description": "Displays option in right-click menu."
+  }
+
+}
