@@ -21,6 +21,8 @@
     "96": "icons/icon-96.png",
     "128": "icons/icon-128.png"
   },
+  
+  "omnibox": { "keyword" : "dwds" },
 
   "background": {
     "scripts": ["background.js"]
@@ -28,7 +30,8 @@
 
   "permissions": [
     "menus",
-    "search"
+    "search",
+    "https://www.dwds.de/"
   ],
 
   "chrome_settings_overrides": {
@@ -41,8 +44,6 @@
       "encoding": "UTF-8"
     }
   },
-
-  "incognito": "spanning",
 
   "author": "Adrien Barbaresi",
   "homepage_url": "https://github.com/zentrum-lexikographie/dwds-addon"
