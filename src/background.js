@@ -1,7 +1,9 @@
 // display text according to current locale
-var menutext = browser.i18n.getMessage("menuContent");
+var menuText = browser.i18n.getMessage("menuContent");
+var omniboxSuggestion = browser.i18n.getMessage("omniboxSuggestion");
+var omniboxText = browser.i18n.getMessage("omniboxText");
 
-// display text according to current locale
+// construct queries starting from this URL
 const baseURL = "https://www.dwds.de/wb/";
 
 
@@ -11,7 +13,7 @@ Create a menu item for the search engine
 function createMenuItem(engines) {
   browser.menus.create({
     id: "dwds",
-    title: menutext,
+    title: menuText,
     contexts: ["selection"]
   });
 }
@@ -34,19 +36,18 @@ browser.menus.onClicked.addListener((info, tab) => {
 /*
 Use omnibox to trigger DWDS query on user's request
 */
-
 function getSuggestions(input) {
   var result = [];
   let suggestion = {
     content: baseURL + input,
-    description: input
+    description: omniboxText
   }
   result.push(suggestion);
   return result;
 }
 
 browser.omnibox.setDefaultSuggestion({
-  description: "Search with DWDS"
+  description: omniboxSuggestion
 });
 
 browser.omnibox.onInputChanged.addListener((input, suggest) => {

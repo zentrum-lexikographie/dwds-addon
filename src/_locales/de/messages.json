@@ -12,6 +12,16 @@
   "menuContent": {
     "message": "Im DWDS nachschlagen",
     "description": "Displays option in right-click menu."
+  },
+
+  "omniboxSuggestion": {
+    "message": "Wort eingeben und Link auswählen",
+    "description": "Suggestion for address bar input."
+  },
+
+  "omniboxText": {
+    "message": "Zur Seite gehen:",
+    "description": "Suggestion for generated link in the address bar."
   }
 
 }
