@@ -36,6 +36,11 @@ browser.menus.onClicked.addListener((info, tab) => {
 /*
 Use omnibox to trigger DWDS query on user's request
 */
+browser.omnibox.setDefaultSuggestion({
+  description: omniboxSuggestion
+});
+
+
 function getSuggestions(input) {
   var result = [];
   let suggestion = {
@@ -46,9 +51,6 @@ function getSuggestions(input) {
   return result;
 }
 
-browser.omnibox.setDefaultSuggestion({
-  description: omniboxSuggestion
-});
 
 browser.omnibox.onInputChanged.addListener((input, suggest) => {
   suggest(getSuggestions(input));
