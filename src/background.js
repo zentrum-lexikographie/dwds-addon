@@ -4,7 +4,7 @@ var omniboxSuggestion = browser.i18n.getMessage("omniboxSuggestion");
 var omniboxText = browser.i18n.getMessage("omniboxText");
 
 // construct queries starting from this URL
-const baseURL = "https://www.dwds.de/wb/";
+const baseURL = "https://www.dwds.de/?q=";
 
 
 /*

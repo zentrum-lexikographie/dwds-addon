@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "0.1.3",
+  "version": "0.1.4",
 
   "default_locale": "de",
 
@@ -37,7 +37,7 @@
   "chrome_settings_overrides": {
     "search_provider": {
       "name": "DWDS",
-      "search_url": "https://www.dwds.de/wb/{searchTerms}",
+      "search_url": "https://www.dwds.de/?q={searchTerms}",
       "keyword": "dwds",
       "favicon_url": "https://www.dwds.de/favicon-32x32.png",
       "is_default": false,
