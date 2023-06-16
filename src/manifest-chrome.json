@@ -4,13 +4,8 @@
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
   "version": "0.2.0",
-  "default_locale": "de",
 
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "browser-addon@dwds.de"
-    }
-  },
+  "default_locale": "de",
 
   "icons": {
     "16": "icons/favicon-16.png",
@@ -24,11 +19,11 @@
   "omnibox": { "keyword" : "dwds" },
 
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
 
   "permissions": [
-    "menus",
+    "contextMenus",
     "search"
   ],
 
