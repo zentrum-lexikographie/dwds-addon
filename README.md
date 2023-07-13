@@ -24,8 +24,25 @@ Work in progress on a browser extension which interacts with the German online d
 3. Run `build.sh`
 
 
-### Publication
+### Test process
 
+1. Install [Python](https://www.python.org/downloads/) (with the systems default package manager; with [asdf](https://asdf-vm.com/guide/getting-started.html); etc.)  
+2. Create virtual environment with `python -m venv venv`    
+2.1 Activate env with `source ./venv/bin/activate`  
+2.2 Install required packages `pip install -r requirements.txt`  
+3. Run `python test.py` to run the End-to-End Test with   
+-> [selenium](https://pypi.org/project/selenium/): for controlling the browser  
+and   
+-> [pyautogui](https://pypi.org/project/PyAutoGUI/): for controlling the mouse
+
+Instead of 2. it's also possible to run `./setup-tests.sh`
+
+Firefox must be installed to run the test!
+
+Unfortunately an "open context menu and click arrow down on the keyboard" with selenium isn't practical for reaching the context menu entries, therefore, pyautogui is also needed.  
+
+
+### Publication
 
 * [Firefox add-on page](https://addons.mozilla.org/firefox/addon/dwds/)
 * [Publish to Webstore](https://developer.chrome.com/docs/webstore/publish/) & [Chrome Webstore search](https://chrome.google.com/webstore/category/extensions)
