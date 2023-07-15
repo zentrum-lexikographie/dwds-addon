@@ -39,6 +39,31 @@ def decideWhetherToShowDebuggingPageOrNot():
             driver.get(debugging_url)
             action_chain.pause(5).perform()
 
+def searchWithDwds():
+    global driver
+    global action_chain
+
+    decideWhetherToShowDebuggingPageOrNot()
+
+    x = driver.get_window_position().get('x')
+    y = driver.get_window_position().get('y')
+
+    # move mouse caret to last element in context menu (dwds search) and click the entry
+    pyautogui.moveTo(x + 350, y + 80, duration=1)
+    pyautogui.leftClick()
+
+    pyautogui.write('dwds', interval=0.2)
+    pyautogui.press('space')
+    pyautogui.write('test', interval=0.2)
+
+    action_chain.pause(2).perform()
+
+    pyautogui.press('down')
+    action_chain.pause(0.5).perform()
+    pyautogui.press('enter')
+
+    action_chain.pause(2).perform()
+
 
 # This test navigates to the dwds website, selects text and clicks the context menu entry for redirection to dwds again,
 # but with a search term provided.
@@ -84,6 +109,7 @@ def run_tests():
     # global driver
     setup()
     selectTextAndClickContextMenuEntry()
+    searchWithDwds()
     # driver.quit()
 
 

@@ -39,8 +39,6 @@ Instead of 2. it's also possible to run `./setup-tests.sh`
 
 Firefox must be installed to run the test!
 
-Unfortunately an "open context menu and click arrow down on the keyboard" with selenium isn't practical for reaching the context menu entries, therefore, pyautogui is also needed.  
-
 
 ### Publication
 
