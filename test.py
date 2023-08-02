@@ -80,9 +80,9 @@ def select_text_and_click_context_menu_entry():
     # move mouse caret to last element in context menu (dwds search) and click the entry
     sys = system()
     if sys == 'Windows':
-        pyautogui.moveTo(x + 450, y + 360, duration=1)
+        pyautogui.moveTo(x + 450, y + 385, duration=1)
     else:
-        pyautogui.moveTo(x + 450, y + 310, duration=1)
+        pyautogui.moveTo(x + 450, y + 370, duration=1)
     pyautogui.leftClick()
 
     action_chain.pause(2).perform()

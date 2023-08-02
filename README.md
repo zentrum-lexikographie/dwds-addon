@@ -27,6 +27,11 @@ Work in progress on a browser extension which interacts with the German online d
 ### Test process
 
 1. Install [Python](https://www.python.org/downloads/) (with the systems default package manager; with [asdf](https://asdf-vm.com/guide/getting-started.html); etc.)  
+1.1 On Linux base systems also install tk with  
+    `sudo apt install python3-tk python3-dev` or  
+    `sudo pacman -S tk` or  
+    `sudo yum install python3-tk`  
+    depending on your distro..
 2. Create virtual environment with `python -m venv venv`    
 2.1 Activate env with `source ./venv/bin/activate`  
 2.2 Install required packages `pip install -r requirements.txt`  
